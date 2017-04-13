@@ -21,7 +21,8 @@ $(document).ready(function () {
     this.connection = PUBNUB.init({
       publish_key: this.publishKey,
       subscribe_key: this.subscribeKey,
-      uuid: this.username
+      uuid: this.username,
+      ssl: true
     });
   };
 
